@@ -5,7 +5,7 @@
 - Due to the way the end points from [dummy todo API](https://dummyjson.com/docs) are not saving anything I just used the local storage to keep storing user's data
 
 ## Live demo 
-[Live Demo]()
+[Live Demo](https://todo-assgnmt.netlify.app/)
 
 ## Built With
 
