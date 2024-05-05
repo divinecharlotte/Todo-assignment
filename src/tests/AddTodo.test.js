@@ -23,6 +23,7 @@ describe('AddTodo Component', () => {
 
     fireEvent.change(inputElement, { target: { value: 'New todo item' } });
     fireEvent.click(buttonElement);
+    
 
     expect(mockOnAddTodo).toHaveBeenCalledWith('New todo item');
   });
