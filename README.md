@@ -43,11 +43,15 @@ npm install
 
 - To launch the app locally: Run 
                             ```
-                            npm run  dev
+                            npm run  start
                             ```
                         
 ### To run tests
--     
+-   To run the test: Run 
+                            ```
+                            npm run  test
+                            ```
+                          
 
 ## Authors
 
