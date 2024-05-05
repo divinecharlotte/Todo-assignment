@@ -2,10 +2,11 @@ import { useDispatch, useSelector } from "react-redux";
 import TodoItem from "./TodoItem";
 import TodoFunctions from "../services/TodoFunctions";
 
-const TodoList = () => {
+const CompletedTodos = () => {
   const dispatch = useDispatch();
   const todos = useSelector((state) => state.todos.todos);
-  const completedTodos = todos.filter((todo) => todo.status === "Completed");
+  const completedTodos = Array.isArray(todos) ? todos.filter((todo) => todo.status === "Completed") : [];
+  // const completedTodos = todos.filter((todo) => todo.status === "Completed");
 
   return (
     <div>
@@ -28,4 +29,4 @@ const TodoList = () => {
   );
 };
 
-export default TodoList;
+export default CompletedTodos;

@@ -40,9 +40,9 @@ const TodoItem = ({ todo, onRemove, onEdit, onChangeStatus }) => {
       <h4 className=" font-semibold">{t(todo.text)}</h4>
       <hr className="bg-slate-300 h-0.5 w-auto" />
       <div className="flex gap-2">
-        <button className="rounded-full text-red-600 bg-red-100 px-1 " onClick={() => onRemove(todo.id)}> <FontAwesomeIcon icon={faTrash} /></button>
-        <button className="rounded-full text-orange-600 bg-orange-100  px-1" onClick={() => onEdit(todo.id, todo.text)}><FontAwesomeIcon icon={faPenToSquare} /></button>
-        <button className="rounded-full text-green-600 bg-green-100 px-1" onClick={() => onChangeStatus(todo.id, todo.status)}><FontAwesomeIcon icon={faClosedCaptioning} /></button>
+        <button className="rounded-full text-red-600 bg-red-100 px-1 " onClick={() => onRemove(todo.id)} aria-label={t('Remove')}> <FontAwesomeIcon icon={faTrash} /></button>
+        <button className="rounded-full text-orange-600 bg-orange-100  px-1" onClick={() => onEdit(todo.id, todo.text)} aria-label={t('Edit')}><FontAwesomeIcon icon={faPenToSquare} /></button>
+        <button className="rounded-full text-green-600 bg-green-100 px-1" onClick={() => onChangeStatus(todo.id, todo.status)} aria-label={t('Complete')}><FontAwesomeIcon icon={faClosedCaptioning} /></button>
       </div>
     </li>
   );
